@@ -1,0 +1,141 @@
+body {
+	margin: 0.02em;
+	background-color: rgb(192, 212, 248);
+}
+
+#nev-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	background-color: rgb(204, 163, 241);
+}
+
+#main-nev {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	margin-left: 1.4em;
+}
+
+.link {
+	font-size: 1.2em;
+	color: white;
+	text-decoration: none;
+}
+
+#logo-container {
+	display: grid;
+	justify-content: end;
+	align-items: center;
+}
+
+#logo {
+	font-size: 2em;
+	color: white;
+	font-weight: bolder;
+	margin: 0.5em;
+}
+
+#header-container {
+	display: grid;
+	justify-content: center;
+}
+
+#main-header {
+	font-size: 3em;
+	letter-spacing: 0.13em;
+	margin: 1.5em;
+}
+
+#search-container {
+	display: grid;
+	justify-content: center;
+}
+
+#warper {
+	display: inline;
+}
+
+#cities-container {
+	display: grid;
+	justify-items: center;
+	margin-top: 1.4em;
+}
+
+.container {
+	display: grid;
+	height: 70vh;
+	width: 75vw;
+	grid-template-rows: repeat(2, 1fr);
+	background-color: rgba(274, 271, 324, 0.6);
+	gap: 5px;
+	border-radius: 3em;
+	box-shadow: rgb(272, 249, 266) 0px 0px 130px 50px;
+}
+
+.main-view {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-items: center;
+	background-color: rgb(275, 264, 252);
+	border-radius: 30px 30px 0px 0px;
+}
+
+.sub-view {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-items: center;
+	background-color: rgb(275, 264, 252);
+	border-radius: 0px 0px 30px 30px;
+	
+}
+
+.temp {
+	font-size: 2em;
+}
+
+.name {
+	font-size: 1.5em;
+}
+
+.condition {
+	font-size: 1.5em;
+	margin-left: 9px;
+}
+
+.icon {
+	width: 7.4em;
+	height: 7.4em;
+}
+
+.save-and-delete{
+	margin-right:4em ;
+}	
+
+.save-city{
+	margin-bottom: 1em;
+	width: 5em;
+	height: 3em;
+	border-radius: 0.3em;
+	box-shadow: gray 2px 2px 2px 2px ;
+	background-color: rgb(25, 200, 235);
+	color: white;
+}
+
+.delete-city{
+	width: 5em;
+	height: 3em;
+	border-radius: 0.3em;
+	box-shadow: gray 2px 2px 2px 2px ;
+	background-color: rgb(25, 200, 235);
+	color: white;
+}
+
+
+#home-page-button{
+	color: white;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+

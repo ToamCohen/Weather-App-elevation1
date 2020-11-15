@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="nev-container">
+			<div id="main-nev">
+				<div id="home-page-button">Home</div>
+				<div class="link">About</div>
+				<div class="link">Help</div>
+			</div>
+			<div id="logo-container">
+				<p id="logo">Weather-App</p>
+			</div>
+		</div>
+		<header id="header-container">
+			<h1 id="main-header">Weather-App</h1>
+		</header>
+
+		<div id="search-container">
+			<div id="warper">
+				<input id="city-name" type="text" />
+				<button id="find-city">Click</button>
+			</div>
+		</div>
+		<div id="cities-container"></div>
+
+		<!-- =======<template></template>======= -->
+		<script id="cities-template" type="text/x-handlebars-template">
+			{{#each data}}
+				<div id="{{_id}}" class="container">
+					<div class="main-view">
+						<div class="save-and-delete">
+							<button class="delete-city">
+								Delete
+							</button>
+						</div>
+						<div class="temp">
+							{{temperature}}
+						</div>
+						<img class="icon" src={{conditionPic}} alt="" />
+					</div>
+					<div class="sub-view">
+						<div class="name">
+							{{name}}
+						</div>
+						<div class="condition">
+							{{condition}}
+						</div>
+					</div>
+				</div>
+			{{/each}}
+		</script>
+		<script id="city-template" type="text/x-handlebars-template">
+			<div id="{{_id}}" class="container">
+				<div class="main-view">
+					<div class="save-and-delete">
+						<button class="save-city">
+							Save
+						</button>
+						<br />
+					</div>
+					<div class="temp">
+						{{temperature}}
+					</div>
+					<img
+						class="icon"
+						src="http://openweathermap.org/img/wn/{{conditionPic}}@2x.png"
+						alt=""
+					/>
+				</div>
+				<div class="sub-view">
+					<div class="name">
+						{{name}}
+					</div>
+					<div class="condition">
+						{{condition}}
+					</div>
+				</div>
+			</div>
+		</script>
+		<!-- =======<template></template>======= -->
+
+		<!-- =======<script></script>======= -->
+		<script src="/jquery/dist/jquery.js"></script>
+		<script src="/handlebars/dist/handlebars.js"></script>
+		<script src="Renderer.js"></script>
+		<script src="Model.js"></script>
+		<script src="Controller.js"></script>
+	</body>
+</html>
