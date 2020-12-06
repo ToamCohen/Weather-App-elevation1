@@ -42,7 +42,8 @@ router.post("/city", function (req, res) {
 			temperature: req.body.temperature,
 			condition: req.body.condition,
 			conditionPic: req.body.conditionPic,
-		}).save();
+		})
+		c1.save();
 		res.status(200).json(c1);
 	} catch (err) {
 		res.status(400).json({ message: err.message });

@@ -13,5 +13,6 @@ app.use(express.static(path.join(__dirname, "node_modules")));
 
 app.use("/", api);
 
-const port = process.env.PORT || 4000;
-app.listen(port, () => console.log("server is up and runing"));
+const port =  4000;
+app.listen(process.env.PORT || port, () => console.log("server is up and runing"));
+	
