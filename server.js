@@ -3,7 +3,7 @@ const app = express();
 const path = require("path");
 const mongoose = require("mongoose");
 mongoose.set("useNewUrlParser", true);
-mongoose.connect(process.env.MONGODB_URL || "mongodb://localhost/weatherAppFixDB", { useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/weatherAppFixDB", { useUnifiedTopology: true });
 const api = require("./server/routers/api");
 
 app.use(express.json());
